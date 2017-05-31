@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, arial;
+
+  .card {
+    margin: 30px auto;
+    width: 440px;
+    height: 440px;
+    box-shadow: 0px 2px 3px #888888;
+    position: relative;
+    overflow: hidden;
+
+    .card-image {
+      .activator {
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+
+
+    .card-content {
+      padding: 24px;
+
+      .card-title {
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 8px;
+        display: block;
+        cursor: pointer;
+
+        .dots {
+          float:right;
+          cursor: pointer;
+
+        }
+
+      }
+
+    }
+
+    .card-reveal {
+      padding: 24px;
+      height: 440px;
+      overflow: hidden;
+      background: #FFFFFF;
+      position: absolute;
+      top: 440px;
+      transition: ease 1s;
+      .card-title {
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 8px;
+        width: 100%;
+
+        .close {
+          float: right;
+          cursor: pointer;
+        }
+      }
+    }
+
+  }
+
+}
